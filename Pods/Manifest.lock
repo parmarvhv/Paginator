@@ -1,0 +1,22 @@
+PODS:
+  - PullToRefresh (2.0.1)
+
+DEPENDENCIES:
+  - PullToRefresh (from `git@github.com:vaibhav-nickelfox/SSPullToRefresh.git`, branch `swift`)
+
+EXTERNAL SOURCES:
+  PullToRefresh:
+    :branch: swift
+    :git: git@github.com:vaibhav-nickelfox/SSPullToRefresh.git
+
+CHECKOUT OPTIONS:
+  PullToRefresh:
+    :commit: c06ee8caeb3ca0a195f92e4e01a8b53e38547e9d
+    :git: git@github.com:vaibhav-nickelfox/SSPullToRefresh.git
+
+SPEC CHECKSUMS:
+  PullToRefresh: 1d4ca9f2add8d74ca5577653356e28388a9a5099
+
+PODFILE CHECKSUM: e89dabcf6a6be2bacd042e4c3cfe31c6d1cc44a1
+
+COCOAPODS: 1.2.1

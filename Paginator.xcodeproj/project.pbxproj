@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		808DFD541F569BF9002EBE5C /* Paginator.h in Headers */ = {isa = PBXBuildFile; fileRef = 808DFD521F569BF9002EBE5C /* Paginator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		808DFD5C1F569C4A002EBE5C /* PaginationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DFD5B1F569C4A002EBE5C /* PaginationManager.swift */; };
+		D1FE6CF84DC6D73B38001FDE /* Pods_Paginator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9B3901131FB005B2626DF0 /* Pods_Paginator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12EF740F70843D58873FCB64 /* Pods-Paginator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paginator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Paginator/Pods-Paginator.release.xcconfig"; sourceTree = "<group>"; };
+		3D9B3901131FB005B2626DF0 /* Pods_Paginator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Paginator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		808DFD4F1F569BF9002EBE5C /* Paginator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Paginator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		808DFD521F569BF9002EBE5C /* Paginator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Paginator.h; sourceTree = "<group>"; };
 		808DFD531F569BF9002EBE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		808DFD5B1F569C4A002EBE5C /* PaginationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaginationManager.swift; path = Classes/PaginationManager.swift; sourceTree = "<group>"; };
+		9C5EA294608AAD2F4CD58200 /* Pods-Paginator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paginator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Paginator/Pods-Paginator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +27,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1FE6CF84DC6D73B38001FDE /* Pods_Paginator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		245556F56B5C2C13D75F8D54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D9B3901131FB005B2626DF0 /* Pods_Paginator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		808DFD451F569BF9002EBE5C = {
 			isa = PBXGroup;
 			children = (
 				808DFD511F569BF9002EBE5C /* Paginator */,
 				808DFD501F569BF9002EBE5C /* Products */,
+				BD8BC5C6D3CECBAEA8670161 /* Pods */,
+				245556F56B5C2C13D75F8D54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +63,28 @@
 		808DFD511F569BF9002EBE5C /* Paginator */ = {
 			isa = PBXGroup;
 			children = (
+				808DFD5A1F569C27002EBE5C /* Classes */,
 				808DFD521F569BF9002EBE5C /* Paginator.h */,
 				808DFD531F569BF9002EBE5C /* Info.plist */,
 			);
 			path = Paginator;
+			sourceTree = "<group>";
+		};
+		808DFD5A1F569C27002EBE5C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				808DFD5B1F569C4A002EBE5C /* PaginationManager.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BD8BC5C6D3CECBAEA8670161 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C5EA294608AAD2F4CD58200 /* Pods-Paginator.debug.xcconfig */,
+				12EF740F70843D58873FCB64 /* Pods-Paginator.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 808DFD571F569BF9002EBE5C /* Build configuration list for PBXNativeTarget "Paginator" */;
 			buildPhases = (
+				8A708D882378EC5EA9888C11 /* [CP] Check Pods Manifest.lock */,
 				808DFD4A1F569BF9002EBE5C /* Sources */,
 				808DFD4B1F569BF9002EBE5C /* Frameworks */,
 				808DFD4C1F569BF9002EBE5C /* Headers */,
 				808DFD4D1F569BF9002EBE5C /* Resources */,
+				29008512C556D92D9C223B63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +133,7 @@
 					808DFD4E1F569BF9002EBE5C = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = STRYF8536N;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -127,11 +165,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29008512C556D92D9C223B63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Paginator/Pods-Paginator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A708D882378EC5EA9888C11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		808DFD4A1F569BF9002EBE5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808DFD5C1F569C4A002EBE5C /* PaginationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -228,7 +300,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -241,7 +313,9 @@
 		};
 		808DFD581F569BF9002EBE5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C5EA294608AAD2F4CD58200 /* Pods-Paginator.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = STRYF8536N;
@@ -254,13 +328,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nickelfox.Paginator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		808DFD591F569BF9002EBE5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12EF740F70843D58873FCB64 /* Pods-Paginator.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = STRYF8536N;

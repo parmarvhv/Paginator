@@ -1,0 +1,22 @@
+{
+  "name": "PullToRefresh",
+  "version": "2.0.1",
+  "summary": "Simple and highly customizable pull to refresh view.",
+  "homepage": "https://github.com/soffes/sspulltorefresh",
+  "authors": {
+    "Sam Soffes": "sam@soff.es"
+  },
+  "source": {
+    "git": "https://github.com/soffes/sspulltorefresh.git",
+    "tag": "v2.0.1"
+  },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "source_files": "Sources/*.swift",
+  "description": "PullToRefresh is a simple and highly customizable pull to refresh view. It lets you implement a content view separate so you don't have to hack up the pulling logic everything you want to customize the appearance.",
+  "platforms": {
+    "ios": "9.0"
+  }
+}
