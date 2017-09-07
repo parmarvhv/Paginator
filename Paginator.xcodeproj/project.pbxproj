@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		808DFD541F569BF9002EBE5C /* Paginator.h in Headers */ = {isa = PBXBuildFile; fileRef = 808DFD521F569BF9002EBE5C /* Paginator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		808DFD5C1F569C4A002EBE5C /* PaginationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DFD5B1F569C4A002EBE5C /* PaginationManager.swift */; };
+		80D30CC51F5ED8AC0086D2B0 /* PaginationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D30CC41F5ED8AC0086D2B0 /* PaginationManager.swift */; };
+		80FF1DB31F60E57600849A35 /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF1DB21F60E57600849A35 /* PullToRefresh.swift */; };
 		D1FE6CF84DC6D73B38001FDE /* Pods_Paginator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9B3901131FB005B2626DF0 /* Pods_Paginator.framework */; };
 /* End PBXBuildFile section */
 
@@ -18,7 +19,8 @@
 		808DFD4F1F569BF9002EBE5C /* Paginator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Paginator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		808DFD521F569BF9002EBE5C /* Paginator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Paginator.h; sourceTree = "<group>"; };
 		808DFD531F569BF9002EBE5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		808DFD5B1F569C4A002EBE5C /* PaginationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaginationManager.swift; path = Classes/PaginationManager.swift; sourceTree = "<group>"; };
+		80D30CC41F5ED8AC0086D2B0 /* PaginationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaginationManager.swift; path = Classes/PaginationManager.swift; sourceTree = "<group>"; };
+		80FF1DB21F60E57600849A35 /* PullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PullToRefresh.swift; path = Classes/PullToRefresh.swift; sourceTree = "<group>"; };
 		9C5EA294608AAD2F4CD58200 /* Pods-Paginator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Paginator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Paginator/Pods-Paginator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +75,8 @@
 		808DFD5A1F569C27002EBE5C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				808DFD5B1F569C4A002EBE5C /* PaginationManager.swift */,
+				80FF1DB21F60E57600849A35 /* PullToRefresh.swift */,
+				80D30CC41F5ED8AC0086D2B0 /* PaginationManager.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -203,7 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				808DFD5C1F569C4A002EBE5C /* PaginationManager.swift in Sources */,
+				80D30CC51F5ED8AC0086D2B0 /* PaginationManager.swift in Sources */,
+				80FF1DB31F60E57600849A35 /* PullToRefresh.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +377,7 @@
 				808DFD591F569BF9002EBE5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

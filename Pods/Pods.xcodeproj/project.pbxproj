@@ -7,26 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0052A13FF836CB488C984427F6EDEC0C /* PullToRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCA0A1D6A44B73B2972422994117188 /* PullToRefresh-dummy.m */; };
-		1574F5801849A7F7DAC212110140A704 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390759F93B7F116357C302BD1F71B145 /* ContentView.swift */; };
-		234F82C8E84E1154D65625241721974D /* RefreshViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32EB75F5C45B7638349C36752FB4B7C0 /* RefreshViewDelegate.swift */; };
-		6DC7C7ADF79339D727FAE1B5759DEC92 /* DefaultContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E0404399C741104D5F4F338973ECDD /* DefaultContentView.swift */; };
-		9D5247D30BB5A789D7E5A22C9CAA2BF9 /* Pods-Paginator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C73732B82423D2C9C6F890B9C330B84 /* Pods-Paginator-dummy.m */; };
-		9E3CA2C704903F3ADB2582393067BB59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		ABA94F9C42CFDF9EF594B94608C83321 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B7CE9299FC49578B5711FF5FE18D8922 /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E7DC5E254DC8105AAFE90E951A373D /* RefreshView.swift */; };
-		D1A180591DF614D04B6FB7DE7CD9368A /* PullToRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DFC8CD473D31C6535C85428536F437F /* PullToRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EBDF5A8445AB70FB35B19905D827BDAE /* SimpleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55133479A2FCEEF2DE43C3C05892548E /* SimpleContentView.swift */; };
-		F40C943083C0876D91527093D564DE4E /* Pods-Paginator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C616E78871611978A3E87836DFD4098 /* Pods-Paginator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042CF9D425CCF414DACC22246103BB27 /* SSPullToRefreshView.h in Headers */ = {isa = PBXBuildFile; fileRef = 65590FA46CEB68646E03AF62F028D408 /* SSPullToRefreshView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E6080A0D53FD4950449C22BEEE47D9E /* Pods-Paginator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C616E78871611978A3E87836DFD4098 /* Pods-Paginator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FF3DEE590DC66A585F80D542853BD31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		54778EE7EEA2DF5E0503A91C86CDECAC /* SSPullToRefreshSimpleContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1160D1D366A1D1153F57919C9873FA72 /* SSPullToRefreshSimpleContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58B2AB1862081E4D644F055812A88157 /* SSPullToRefreshDefaultContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4192216A6CD29EB25857D85BB03559FA /* SSPullToRefreshDefaultContentView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		638366426652C9A602A7716EC9BE5F05 /* SSPullToRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = BFFA9431966F9DD46EEA822A2DA149AB /* SSPullToRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		774CED8C7A6D4BBEBCFEDD6C978BB935 /* SSPullToRefreshDefaultContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = BFEC0A474BCF5652E296375946BAD6DC /* SSPullToRefreshDefaultContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88529A936F3D908403EC277E0C9989C0 /* SSPullToRefresh-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A522FBF94B02E8DC18CB7183E48B4B4A /* SSPullToRefresh-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7FB177645D08E28B9853F023940CE0A /* SSPullToRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4474C93182C594A3E35BB76655661A61 /* SSPullToRefreshView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D7FD10626F336176E7801F9035B6BACE /* Pods-Paginator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C73732B82423D2C9C6F890B9C330B84 /* Pods-Paginator-dummy.m */; };
+		D827CC782A4CAE6C562D5307AA86BEBA /* SSPullToRefresh-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B69811247ABCA046C9A87EFB09517D6 /* SSPullToRefresh-dummy.m */; };
+		FD9788F4D184383BDDC0039CC3E3D09E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		FFDF8FF5C6B1B1FCF6371D849EE1710D /* SSPullToRefreshSimpleContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E865B16F3DF06E9A9137B366D33285F /* SSPullToRefreshSimpleContentView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4F2484807C82B537874AFFB0AA25C815 /* PBXContainerItemProxy */ = {
+		2C300BBC3A24FBE1BF9BC5EDEEBF936C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3D4C992D92F01354025598341C198035;
-			remoteInfo = PullToRefresh;
+			remoteGlobalIDString = 9B1130866E456407D523F82C3824183B;
+			remoteInfo = SSPullToRefresh;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -34,43 +36,45 @@
 		01CE67843DB10486068E6C084F38BD98 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C73732B82423D2C9C6F890B9C330B84 /* Pods-Paginator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Paginator-dummy.m"; sourceTree = "<group>"; };
 		1092396B84B9A1BA9F2E9A205107CF03 /* Pods-Paginator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Paginator.modulemap"; sourceTree = "<group>"; };
+		1160D1D366A1D1153F57919C9873FA72 /* SSPullToRefreshSimpleContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSPullToRefreshSimpleContentView.h; path = SSPullToRefresh/SSPullToRefreshSimpleContentView.h; sourceTree = "<group>"; };
+		142BE2BE6BCBF0B147705050B1384809 /* SSPullToRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSPullToRefresh-prefix.pch"; sourceTree = "<group>"; };
 		279F851290EBA0497E2C1CCEC2AD81F1 /* Pods-Paginator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Paginator-resources.sh"; sourceTree = "<group>"; };
-		2DCA0A1D6A44B73B2972422994117188 /* PullToRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PullToRefresh-dummy.m"; sourceTree = "<group>"; };
-		32EB75F5C45B7638349C36752FB4B7C0 /* RefreshViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshViewDelegate.swift; path = Sources/RefreshViewDelegate.swift; sourceTree = "<group>"; };
-		3744E45AFCB05FA04AE9FE286BF94F8B /* PullToRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PullToRefresh-prefix.pch"; sourceTree = "<group>"; };
-		390759F93B7F116357C302BD1F71B145 /* ContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = Sources/ContentView.swift; sourceTree = "<group>"; };
-		55133479A2FCEEF2DE43C3C05892548E /* SimpleContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleContentView.swift; path = Sources/SimpleContentView.swift; sourceTree = "<group>"; };
-		63B44E85301ED4BB61C407C9C44A40EC /* PullToRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PullToRefresh.framework; path = PullToRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C4E39794E373C6CC338657EC0D4C52B /* SSPullToRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSPullToRefresh.framework; path = SSPullToRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4192216A6CD29EB25857D85BB03559FA /* SSPullToRefreshDefaultContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSPullToRefreshDefaultContentView.m; path = SSPullToRefresh/SSPullToRefreshDefaultContentView.m; sourceTree = "<group>"; };
+		4474C93182C594A3E35BB76655661A61 /* SSPullToRefreshView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSPullToRefreshView.m; path = SSPullToRefresh/SSPullToRefreshView.m; sourceTree = "<group>"; };
+		65590FA46CEB68646E03AF62F028D408 /* SSPullToRefreshView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSPullToRefreshView.h; path = SSPullToRefresh/SSPullToRefreshView.h; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6DFC8CD473D31C6535C85428536F437F /* PullToRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PullToRefresh-umbrella.h"; sourceTree = "<group>"; };
+		6E865B16F3DF06E9A9137B366D33285F /* SSPullToRefreshSimpleContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSPullToRefreshSimpleContentView.m; path = SSPullToRefresh/SSPullToRefreshSimpleContentView.m; sourceTree = "<group>"; };
+		75C820DD5C4B2CE308F6BDA91FA792EA /* SSPullToRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SSPullToRefresh.modulemap; sourceTree = "<group>"; };
 		7C616E78871611978A3E87836DFD4098 /* Pods-Paginator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Paginator-umbrella.h"; sourceTree = "<group>"; };
+		8B69811247ABCA046C9A87EFB09517D6 /* SSPullToRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSPullToRefresh-dummy.m"; sourceTree = "<group>"; };
 		8E8A8CB6D5A52CEA5A29F1B72CC40757 /* Pods-Paginator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Paginator-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9CAFE857FCF71A10FF7FEAFC7F53A822 /* Pods_Paginator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Paginator.framework; path = "Pods-Paginator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A740DEE89476A1B83A75DC23586BE712 /* PullToRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PullToRefresh.xcconfig; sourceTree = "<group>"; };
-		A8E7DC5E254DC8105AAFE90E951A373D /* RefreshView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshView.swift; path = Sources/RefreshView.swift; sourceTree = "<group>"; };
-		B1E0404399C741104D5F4F338973ECDD /* DefaultContentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultContentView.swift; path = Sources/DefaultContentView.swift; sourceTree = "<group>"; };
+		A522FBF94B02E8DC18CB7183E48B4B4A /* SSPullToRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSPullToRefresh-umbrella.h"; sourceTree = "<group>"; };
 		B85F2A9D35501C3A963B3D23FF656E56 /* Pods-Paginator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Paginator-acknowledgements.plist"; sourceTree = "<group>"; };
+		BFEC0A474BCF5652E296375946BAD6DC /* SSPullToRefreshDefaultContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSPullToRefreshDefaultContentView.h; path = SSPullToRefresh/SSPullToRefreshDefaultContentView.h; sourceTree = "<group>"; };
+		BFFA9431966F9DD46EEA822A2DA149AB /* SSPullToRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSPullToRefresh.h; path = SSPullToRefresh/SSPullToRefresh.h; sourceTree = "<group>"; };
+		D34C81D50F4D19BDE808B8F6B511976E /* SSPullToRefresh.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSPullToRefresh.xcconfig; sourceTree = "<group>"; };
+		DA8BF8D5726F90915CACF1352A150276 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E186D5F012C8BD20F383948BAED4DC23 /* Pods-Paginator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Paginator.release.xcconfig"; sourceTree = "<group>"; };
-		E354620ACAD2A19A50ED9E2560973E2B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB096122D7D45D72362F5E1639F10492 /* PullToRefresh.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PullToRefresh.modulemap; sourceTree = "<group>"; };
+		EF39C7AD92EDD6F4817114206A956B28 /* Pods_Paginator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Paginator.framework; path = "Pods-Paginator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB45FA432EE4CAEAB31EB0E7D4B78D19 /* Pods-Paginator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Paginator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5E38CD92DEA504F95401F6529E0F3112 /* Frameworks */ = {
+		28C3F9403A7159C0BF7679B44E8FE624 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E3CA2C704903F3ADB2582393067BB59 /* Foundation.framework in Frameworks */,
+				FD9788F4D184383BDDC0039CC3E3D09E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9C595BE20A766DF2EE3F0E6ADC52D41 /* Frameworks */ = {
+		AC86B68C88878733CED90F932A5950FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABA94F9C42CFDF9EF594B94608C83321 /* Foundation.framework in Frameworks */,
+				1FF3DEE590DC66A585F80D542853BD31 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,20 +98,6 @@
 			path = "Target Support Files/Pods-Paginator";
 			sourceTree = "<group>";
 		};
-		310080E71B860FB82A62F35E288DC527 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E354620ACAD2A19A50ED9E2560973E2B /* Info.plist */,
-				EB096122D7D45D72362F5E1639F10492 /* PullToRefresh.modulemap */,
-				A740DEE89476A1B83A75DC23586BE712 /* PullToRefresh.xcconfig */,
-				2DCA0A1D6A44B73B2972422994117188 /* PullToRefresh-dummy.m */,
-				3744E45AFCB05FA04AE9FE286BF94F8B /* PullToRefresh-prefix.pch */,
-				6DFC8CD473D31C6535C85428536F437F /* PullToRefresh-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PullToRefresh";
-			sourceTree = "<group>";
-		};
 		4C10C75ABDE5DA059C22591F8A1AFB14 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,10 +111,33 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				F950A27C4FB678ACDAD69F3D51BA6A47 /* Pods */,
-				FE5EFB2D24FE6D7FAA52CAB830B1C25C /* Products */,
+				BFB7C626E67225E5B695E74091A1DD8B /* Pods */,
+				884AA64B70DF1CD49BCEBD77A5BE0D54 /* Products */,
 				4C10C75ABDE5DA059C22591F8A1AFB14 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		884AA64B70DF1CD49BCEBD77A5BE0D54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF39C7AD92EDD6F4817114206A956B28 /* Pods_Paginator.framework */,
+				2C4E39794E373C6CC338657EC0D4C52B /* SSPullToRefresh.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		983F7A9D6C129B1EB4F4737DE8CFE6BC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA8BF8D5726F90915CACF1352A150276 /* Info.plist */,
+				75C820DD5C4B2CE308F6BDA91FA792EA /* SSPullToRefresh.modulemap */,
+				D34C81D50F4D19BDE808B8F6B511976E /* SSPullToRefresh.xcconfig */,
+				8B69811247ABCA046C9A87EFB09517D6 /* SSPullToRefresh-dummy.m */,
+				142BE2BE6BCBF0B147705050B1384809 /* SSPullToRefresh-prefix.pch */,
+				A522FBF94B02E8DC18CB7183E48B4B4A /* SSPullToRefresh-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SSPullToRefresh";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -135,18 +148,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CF3911DF84B5252BA4163B2672CE9B4B /* PullToRefresh */ = {
+		BFB7C626E67225E5B695E74091A1DD8B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				390759F93B7F116357C302BD1F71B145 /* ContentView.swift */,
-				B1E0404399C741104D5F4F338973ECDD /* DefaultContentView.swift */,
-				A8E7DC5E254DC8105AAFE90E951A373D /* RefreshView.swift */,
-				32EB75F5C45B7638349C36752FB4B7C0 /* RefreshViewDelegate.swift */,
-				55133479A2FCEEF2DE43C3C05892548E /* SimpleContentView.swift */,
-				310080E71B860FB82A62F35E288DC527 /* Support Files */,
+				C729EC3D6F455F1E1AEEE4E4279EBFF9 /* SSPullToRefresh */,
 			);
-			name = PullToRefresh;
-			path = PullToRefresh;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C729EC3D6F455F1E1AEEE4E4279EBFF9 /* SSPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				BFFA9431966F9DD46EEA822A2DA149AB /* SSPullToRefresh.h */,
+				BFEC0A474BCF5652E296375946BAD6DC /* SSPullToRefreshDefaultContentView.h */,
+				4192216A6CD29EB25857D85BB03559FA /* SSPullToRefreshDefaultContentView.m */,
+				1160D1D366A1D1153F57919C9873FA72 /* SSPullToRefreshSimpleContentView.h */,
+				6E865B16F3DF06E9A9137B366D33285F /* SSPullToRefreshSimpleContentView.m */,
+				65590FA46CEB68646E03AF62F028D408 /* SSPullToRefreshView.h */,
+				4474C93182C594A3E35BB76655661A61 /* SSPullToRefreshView.m */,
+				983F7A9D6C129B1EB4F4737DE8CFE6BC /* Support Files */,
+			);
+			name = SSPullToRefresh;
+			path = SSPullToRefresh;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -157,78 +180,65 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F950A27C4FB678ACDAD69F3D51BA6A47 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CF3911DF84B5252BA4163B2672CE9B4B /* PullToRefresh */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FE5EFB2D24FE6D7FAA52CAB830B1C25C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9CAFE857FCF71A10FF7FEAFC7F53A822 /* Pods_Paginator.framework */,
-				63B44E85301ED4BB61C407C9C44A40EC /* PullToRefresh.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		229D061D77B5024A1A074CD58B82E7F5 /* Headers */ = {
+		AEF2F1884297275A4C827F994EC3D276 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F40C943083C0876D91527093D564DE4E /* Pods-Paginator-umbrella.h in Headers */,
+				88529A936F3D908403EC277E0C9989C0 /* SSPullToRefresh-umbrella.h in Headers */,
+				638366426652C9A602A7716EC9BE5F05 /* SSPullToRefresh.h in Headers */,
+				774CED8C7A6D4BBEBCFEDD6C978BB935 /* SSPullToRefreshDefaultContentView.h in Headers */,
+				54778EE7EEA2DF5E0503A91C86CDECAC /* SSPullToRefreshSimpleContentView.h in Headers */,
+				042CF9D425CCF414DACC22246103BB27 /* SSPullToRefreshView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A72B396838A55DC42A53DB515290751 /* Headers */ = {
+		E584E098EE119983870FA417EAAC46BF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1A180591DF614D04B6FB7DE7CD9368A /* PullToRefresh-umbrella.h in Headers */,
+				0E6080A0D53FD4950449C22BEEE47D9E /* Pods-Paginator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		13DD61DBE7FCA30E2567902818B40ACC /* Pods-Paginator */ = {
+		6D5E3621D84F2757E4E607794767DF05 /* Pods-Paginator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B2EFF2C9199B28C66F10C71985C29F5 /* Build configuration list for PBXNativeTarget "Pods-Paginator" */;
+			buildConfigurationList = D8E19472FB0B206150DA082ADC618EAA /* Build configuration list for PBXNativeTarget "Pods-Paginator" */;
 			buildPhases = (
-				60D6D7CEC625C4B7A280857BB5C73C96 /* Sources */,
-				B9C595BE20A766DF2EE3F0E6ADC52D41 /* Frameworks */,
-				229D061D77B5024A1A074CD58B82E7F5 /* Headers */,
+				DD904CC7B536AB91E6FE40953D85FA1A /* Sources */,
+				AC86B68C88878733CED90F932A5950FD /* Frameworks */,
+				E584E098EE119983870FA417EAAC46BF /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BCFF3D23AAA4A58ED1AE46B534ACFF8B /* PBXTargetDependency */,
+				EC27AC33E24D53841C5ECE4756DAB37F /* PBXTargetDependency */,
 			);
 			name = "Pods-Paginator";
 			productName = "Pods-Paginator";
-			productReference = 9CAFE857FCF71A10FF7FEAFC7F53A822 /* Pods_Paginator.framework */;
+			productReference = EF39C7AD92EDD6F4817114206A956B28 /* Pods_Paginator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3D4C992D92F01354025598341C198035 /* PullToRefresh */ = {
+		9B1130866E456407D523F82C3824183B /* SSPullToRefresh */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D0790874D6E655E075C19AA53656D76 /* Build configuration list for PBXNativeTarget "PullToRefresh" */;
+			buildConfigurationList = 737777027B1433A90F876790DA58D9CB /* Build configuration list for PBXNativeTarget "SSPullToRefresh" */;
 			buildPhases = (
-				07E101F447E722BE6400F5173C38C997 /* Sources */,
-				5E38CD92DEA504F95401F6529E0F3112 /* Frameworks */,
-				6A72B396838A55DC42A53DB515290751 /* Headers */,
+				82B85BF652219DE9D78B581D999DB91F /* Sources */,
+				28C3F9403A7159C0BF7679B44E8FE624 /* Frameworks */,
+				AEF2F1884297275A4C827F994EC3D276 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PullToRefresh;
-			productName = PullToRefresh;
-			productReference = 63B44E85301ED4BB61C407C9C44A40EC /* PullToRefresh.framework */;
+			name = SSPullToRefresh;
+			productName = SSPullToRefresh;
+			productReference = 2C4E39794E373C6CC338657EC0D4C52B /* SSPullToRefresh.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -248,87 +258,80 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = FE5EFB2D24FE6D7FAA52CAB830B1C25C /* Products */;
+			productRefGroup = 884AA64B70DF1CD49BCEBD77A5BE0D54 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13DD61DBE7FCA30E2567902818B40ACC /* Pods-Paginator */,
-				3D4C992D92F01354025598341C198035 /* PullToRefresh */,
+				6D5E3621D84F2757E4E607794767DF05 /* Pods-Paginator */,
+				9B1130866E456407D523F82C3824183B /* SSPullToRefresh */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		07E101F447E722BE6400F5173C38C997 /* Sources */ = {
+		82B85BF652219DE9D78B581D999DB91F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1574F5801849A7F7DAC212110140A704 /* ContentView.swift in Sources */,
-				6DC7C7ADF79339D727FAE1B5759DEC92 /* DefaultContentView.swift in Sources */,
-				0052A13FF836CB488C984427F6EDEC0C /* PullToRefresh-dummy.m in Sources */,
-				B7CE9299FC49578B5711FF5FE18D8922 /* RefreshView.swift in Sources */,
-				234F82C8E84E1154D65625241721974D /* RefreshViewDelegate.swift in Sources */,
-				EBDF5A8445AB70FB35B19905D827BDAE /* SimpleContentView.swift in Sources */,
+				D827CC782A4CAE6C562D5307AA86BEBA /* SSPullToRefresh-dummy.m in Sources */,
+				58B2AB1862081E4D644F055812A88157 /* SSPullToRefreshDefaultContentView.m in Sources */,
+				FFDF8FF5C6B1B1FCF6371D849EE1710D /* SSPullToRefreshSimpleContentView.m in Sources */,
+				A7FB177645D08E28B9853F023940CE0A /* SSPullToRefreshView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60D6D7CEC625C4B7A280857BB5C73C96 /* Sources */ = {
+		DD904CC7B536AB91E6FE40953D85FA1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D5247D30BB5A789D7E5A22C9CAA2BF9 /* Pods-Paginator-dummy.m in Sources */,
+				D7FD10626F336176E7801F9035B6BACE /* Pods-Paginator-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BCFF3D23AAA4A58ED1AE46B534ACFF8B /* PBXTargetDependency */ = {
+		EC27AC33E24D53841C5ECE4756DAB37F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PullToRefresh;
-			target = 3D4C992D92F01354025598341C198035 /* PullToRefresh */;
-			targetProxy = 4F2484807C82B537874AFFB0AA25C815 /* PBXContainerItemProxy */;
+			name = SSPullToRefresh;
+			target = 9B1130866E456407D523F82C3824183B /* SSPullToRefresh */;
+			targetProxy = 2C300BBC3A24FBE1BF9BC5EDEEBF936C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		341368FD4E22C4EE557B4D76A0CE2936 /* Release */ = {
+		23C2C0869A7D6E04547C841229C360FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E186D5F012C8BD20F383948BAED4DC23 /* Pods-Paginator.release.xcconfig */;
+			baseConfigurationReference = D34C81D50F4D19BDE808B8F6B511976E /* SSPullToRefresh.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Paginator/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SSPullToRefresh/SSPullToRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSPullToRefresh/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Paginator/Pods-Paginator.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Paginator;
+				MODULEMAP_FILE = "Target Support Files/SSPullToRefresh/SSPullToRefresh.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SSPullToRefresh;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -378,9 +381,9 @@
 			};
 			name = Debug;
 		};
-		6D20C4176BFB122C4F801232DA6C835D /* Release */ = {
+		9DAA767151CAD9734A8AE827268FB925 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A740DEE89476A1B83A75DC23586BE712 /* PullToRefresh.xcconfig */;
+			baseConfigurationReference = D34C81D50F4D19BDE808B8F6B511976E /* SSPullToRefresh.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -394,17 +397,16 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PullToRefresh/PullToRefresh-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PullToRefresh/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SSPullToRefresh/SSPullToRefresh-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSPullToRefresh/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PullToRefresh/PullToRefresh.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SSPullToRefresh/SSPullToRefresh.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PullToRefresh;
+				PRODUCT_NAME = SSPullToRefresh;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -412,42 +414,7 @@
 			};
 			name = Release;
 		};
-		A1554DD4E01E75442B35FEE2ED5A5AFF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A740DEE89476A1B83A75DC23586BE712 /* PullToRefresh.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PullToRefresh/PullToRefresh-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PullToRefresh/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PullToRefresh/PullToRefresh.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PullToRefresh;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BBAB6A8E964AF30DC6AA82FE7913079F /* Debug */ = {
+		A98A94FE78E2DE497B8CA62CED956F4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB45FA432EE4CAEAB31EB0E7D4B78D19 /* Pods-Paginator.debug.xcconfig */;
 			buildSettings = {
@@ -477,9 +444,6 @@
 				PRODUCT_NAME = Pods_Paginator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -530,6 +494,42 @@
 			};
 			name = Release;
 		};
+		E6202B0813353872AA6E8076926CF6B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E186D5F012C8BD20F383948BAED4DC23 /* Pods-Paginator.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Paginator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Paginator/Pods-Paginator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Paginator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -542,20 +542,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B2EFF2C9199B28C66F10C71985C29F5 /* Build configuration list for PBXNativeTarget "Pods-Paginator" */ = {
+		737777027B1433A90F876790DA58D9CB /* Build configuration list for PBXNativeTarget "SSPullToRefresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BBAB6A8E964AF30DC6AA82FE7913079F /* Debug */,
-				341368FD4E22C4EE557B4D76A0CE2936 /* Release */,
+				23C2C0869A7D6E04547C841229C360FD /* Debug */,
+				9DAA767151CAD9734A8AE827268FB925 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D0790874D6E655E075C19AA53656D76 /* Build configuration list for PBXNativeTarget "PullToRefresh" */ = {
+		D8E19472FB0B206150DA082ADC618EAA /* Build configuration list for PBXNativeTarget "Pods-Paginator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A1554DD4E01E75442B35FEE2ED5A5AFF /* Debug */,
-				6D20C4176BFB122C4F801232DA6C835D /* Release */,
+				A98A94FE78E2DE497B8CA62CED956F4A /* Debug */,
+				E6202B0813353872AA6E8076926CF6B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

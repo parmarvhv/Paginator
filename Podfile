@@ -6,8 +6,9 @@ platform :ios, "9.0"
 use_frameworks!
 
 target 'Paginator' do
-	pod 'PullToRefresh', :git => "git@github.com:vaibhav-nickelfox/SSPullToRefresh.git", :branch => "swift"
+	#pod 'PullToRefresh', :git => "git@github.com:vaibhav-nickelfox/SSPullToRefresh.git", :branch => "swift"
 	#pod 'SSPullToRefresh', :git => 'https://github.com/soffes/SSPullToRefresh.git', :tag => '2.0.0'
+	pod 'SSPullToRefresh'
   # Pods for Paginator
 
 end

@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PullToRefresh.xcscheme</key>
+		<key>SSPullToRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>13DD61DBE7FCA30E2567902818B40ACC</key>
+		<key>6D5E3621D84F2757E4E607794767DF05</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3D4C992D92F01354025598341C198035</key>
+		<key>9B1130866E456407D523F82C3824183B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

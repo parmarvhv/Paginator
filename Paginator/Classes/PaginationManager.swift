@@ -2,40 +2,46 @@
 //  PaginationManager.swift
 //  Paginator
 //
-//  Created by Vaibhav Parmar on 30/08/17.
+//  Created by Vaibhav Parmar on 05/09/17.
 //  Copyright © 2017 Vaibhav Parmar. All rights reserved.
 //
 
 import UIKit
-import PullToRefresh
+import SSPullToRefresh
 
 public protocol PaginationManagerDelegate {
 	func refreshAll(completion: @escaping (_ hasMoreData: Bool) -> Void)
 	func loadMore(completion: @escaping (_ hasMoreData: Bool) -> Void)
 }
 
+public enum PullToRefreshType {
+	case none
+	case basic
+	case custom(PullToRefreshContentView)
+}
 
 public class PaginationManager: NSObject {
 	fileprivate weak var scrollView: UIScrollView?
 	fileprivate var refreshControl: UIRefreshControl?
 	fileprivate var bottomLoader: UIView?
 	fileprivate var isObservingKeyPath: Bool = false
-	var contentView: ContentView?
-	var refreshView: RefreshView?
+	fileprivate var pullToRefreshView: PullToRefreshView?
 	
-	var delegate: PaginationManagerDelegate?
+	public var delegate: PaginationManagerDelegate?
 	
-	var showPullToRefresh: Bool {
+	fileprivate var pullToRefreshType: PullToRefreshType {
 		didSet {
 			self.setupPullToRefresh()
 		}
 	}
+	fileprivate var pullToRefreshContentView: UIView? = nil
+	
 	var isLoading = false
 	var hasMoreDataToLoad = true
 	
-	init(scrollView: UIScrollView, showPullToRefresh: Bool = true) {
+	public init(scrollView: UIScrollView, pullToRefreshType: PullToRefreshType = .basic) {
 		self.scrollView = scrollView
-		self.showPullToRefresh = showPullToRefresh
+		self.pullToRefreshType = pullToRefreshType
 		super.init()
 		self.setupPullToRefresh()
 	}
@@ -44,7 +50,7 @@ public class PaginationManager: NSObject {
 		self.removeScrollViewOffsetObserver()
 	}
 	
-	func load(completion: @escaping () -> Void) {
+	public func load(completion: @escaping () -> Void) {
 		self.refresh {
 			completion()
 		}
@@ -54,19 +60,16 @@ public class PaginationManager: NSObject {
 extension PaginationManager {
 	
 	func setupPullToRefresh() {
-		if !self.showPullToRefresh {
+		switch self.pullToRefreshType {
+		case .none:
 			self.removeRefreshControl()
-			return
-		}
-		
-		if self.showPullToRefresh && self.contentView == nil {
+			self.removeCustomPullToRefreshView()
+		case .basic:
+			self.removeCustomPullToRefreshView()
 			self.addRefreshControl()
-			return
-		}
-		
-		if refreshView == nil {
-			guard let contentView = self.contentView else { return }
-			refreshView = RefreshView(scrollView: self.scrollView, delegate: self, contentView: contentView)
+		case .custom(let view):
+			self.removeRefreshControl()
+			self.addCustomPullToRefreshView(view)
 		}
 	}
 	
@@ -79,6 +82,12 @@ extension PaginationManager {
 			for: .valueChanged)
 	}
 	
+	fileprivate func addCustomPullToRefreshView(_ contentView: PullToRefreshContentView) {
+		guard  let scrollView = self.scrollView  else { return }
+		self.pullToRefreshView = PullToRefreshView(scrollView: scrollView, delegate: self)
+		self.pullToRefreshView?.contentView = contentView
+	}
+	
 	fileprivate func removeRefreshControl() {
 		self.refreshControl?.removeTarget(
 			self,
@@ -88,23 +97,34 @@ extension PaginationManager {
 		self.refreshControl = nil
 	}
 	
+	fileprivate func removeCustomPullToRefreshView() {
+		self.pullToRefreshView = nil
+	}
+	
 	@objc fileprivate func handleRefresh() {
 		if self.isLoading {
 			self.refreshControl?.endRefreshing()
+			self.pullToRefreshView?.finishLoading()
 			return
 		}
+		
 		self.isLoading = true
 		self.delegate?.refreshAll(completion: { [weak self] hasMoreData in
 			guard let this = self else { return }
 			this.isLoading = false
 			this.hasMoreDataToLoad = hasMoreData
-			this.refreshControl?.endRefreshing()
+			if let refreshControl = this.refreshControl {
+				refreshControl.endRefreshing()
+			} else if let pullToRefreshView = this.pullToRefreshView {
+				pullToRefreshView.finishLoading()
+			}
 		})
 	}
 	
 	fileprivate func refresh(completion: @escaping () -> Void) {
 		if self.isLoading {
 			self.refreshControl?.endRefreshing()
+			self.pullToRefreshView?.finishLoading()
 			return
 		}
 		self.isLoading = true
@@ -198,33 +218,12 @@ extension PaginationManager {
 	}
 }
 
-extension PaginationManager: RefreshViewDelegate {
-	
-	public func refreshViewShouldStartRefreshing(_ refreshView: RefreshView) -> Bool {
-		return self.showPullToRefresh && self.contentView != nil
+extension PaginationManager: PullToRefreshViewDelegate {
+	public func pull(toRefreshViewDidStartLoading view: PullToRefreshView!) {
+		self.handleRefresh()
 	}
 	
-	public func refreshViewDidStartRefreshing(_ refreshView: RefreshView) {
-		handleRefresh()
-	}
-	
-	public func refreshViewDidFinishRefreshing(_ refreshView: RefreshView) {
-		
-	}
-	
-	public func lastUpdatedAtForRefreshView(_ refreshView: RefreshView) -> Date? {
-		return Date()
-	}
-	
-	public func refreshView(_ refreshView: RefreshView, didUpdateContentInset contentInset: UIEdgeInsets) {
-		
-	}
-	
-	public func refreshView(_ refreshView: RefreshView, willTransitionTo to: RefreshView.State, from: RefreshView.State, animated: Bool) {
-		
-	}
-	
-	public func refreshView(_ refreshView: RefreshView, didTransitionTo to: RefreshView.State, from: RefreshView.State, animated: Bool) {
-		
+	public func pull(toRefreshViewDidFinishLoading view: PullToRefreshView!) {
+		self.pullToRefreshView?.finishLoading()
 	}
 }
